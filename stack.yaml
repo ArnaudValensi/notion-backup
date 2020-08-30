@@ -29,7 +29,7 @@ resolver: lts-16.11
 #   - auto-update
 #   - wai
 packages:
-- .
+  - .
 # Dependency packages to be pulled from upstream that are not in the resolver.
 # These entries can reference officially published versions as well as
 # forks / in-progress versions pinned to a git hash. For example:
@@ -39,8 +39,8 @@ packages:
 # - git: https://github.com/commercialhaskell/stack.git
 #   commit: e7b331f14bcffb8367cd58fbfc8b40ec7642100a
 #
-# extra-deps: []
-
+extra-deps:
+  - monadIO-0.11.1.0@sha256:2407c8aee3a74f3eba897f7c87f702f502394aec8cd412f3d2334cc353f54f13,964
 # Override default flag values for local packages and extra-deps
 # flags: {}
 

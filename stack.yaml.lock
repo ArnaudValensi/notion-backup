@@ -3,7 +3,14 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    hackage: monadIO-0.11.1.0@sha256:2407c8aee3a74f3eba897f7c87f702f502394aec8cd412f3d2334cc353f54f13,964
+    pantry-tree:
+      size: 443
+      sha256: 608107686873b5685ba9d29d65a61fad8f6868e58d92da6349902a851345c125
+  original:
+    hackage: monadIO-0.11.1.0@sha256:2407c8aee3a74f3eba897f7c87f702f502394aec8cd412f3d2334cc353f54f13,964
 snapshots:
 - completed:
     size: 532381

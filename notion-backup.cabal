@@ -27,13 +27,21 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      Utils
+    , EnqueueTask
+    , GetTasks
+    , ExportPageCommand
   other-modules:
       Paths_notion_backup
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
+    , bytestring
+    , http-conduit
+    , aeson
+    , text
+    , monadIO
   default-language: Haskell2010
 
 executable notion-backup-exe
@@ -46,6 +54,8 @@ executable notion-backup-exe
   build-depends:
       base >=4.7 && <5
     , notion-backup
+    , text
+    , optparse-generic
   default-language: Haskell2010
 
 test-suite notion-backup-test
